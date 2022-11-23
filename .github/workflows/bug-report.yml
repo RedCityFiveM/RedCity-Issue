@@ -1,0 +1,47 @@
+name: Bug report
+description: Report un bug
+title: '[Bug]: '
+labels:
+  - bug
+  - ' triage'
+body:
+  - type: input
+    id: Steam
+    attributes:
+      label: Pseudo Steam
+    validations:
+      required: true
+  - type: textarea
+    id: what-happened
+    attributes:
+      label: Que s'est-il passé ?
+      description: Dites-nous ce qui est arrivé
+    validations:
+      required: true
+  - type: textarea
+    id: what-should-happened
+    attributes:
+      label: 'Qu''aurait-il dû arriver ?'
+  - type: dropdown
+    id: server
+    attributes:
+      label: Section
+      description: Sur quel section le problème est arrivé
+      options:
+        - Global
+        - Jobs
+        - nonesx
+        - Mapping
+        - jobs
+        - import
+        - esx
+        - essential
+        - core
+        - compactage
+        - Cayo
+        - Base
+  - type: textarea
+    id: log
+    attributes:
+      label: LOG
+      description: Si vous avez des logs à nous fournir, c'est ici !
