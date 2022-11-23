@@ -5,7 +5,7 @@ labels:
   - bug
   - ' triage'
 body:
-  - type: input
+  - type: dropdown
     id: Steam
     attributes:
       label: Pseudo Steam
